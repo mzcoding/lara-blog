@@ -51,7 +51,7 @@
         <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="">Категории </a>
+                    <a class="nav-link" href="{!! route('categories') !!}">Категории </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Статьи</a>
@@ -89,9 +89,13 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="/js/jquery-3.2.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+@yield('js')
+
+@include('inc.messages')
 
 </body>
 </html>
