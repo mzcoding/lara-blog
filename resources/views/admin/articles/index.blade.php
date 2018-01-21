@@ -37,7 +37,7 @@
                         url: "{!! route('articles.delete') !!}",
                         data: {_token:"{{csrf_token()}}", id:id},
                         complete: function() {
-                            alert("Категория удалена");
+                            alert("Статья удалена");
                             location.reload();
                         }
                     });
