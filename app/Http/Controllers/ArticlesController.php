@@ -20,7 +20,9 @@ class ArticlesController extends Controller
       if(!$objArticle) {
           return abort(404);
       }
+      $comments = $objArticle->comments()->where('status', 1)->get();
 
-      return view('show_article', ['article' => $objArticle]);
+
+      return view('show_article', ['article' => $objArticle, 'comments' => $comments]);
   }
 }

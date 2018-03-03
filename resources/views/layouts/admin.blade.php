@@ -29,19 +29,15 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/admin">Главная <span class="sr-only">(current)</span></a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#">Settings</a>
+                <a class="nav-link" href="#">Профиль</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-            </li>
+
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Поиск">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
         </form>
     </div>
 </nav>
@@ -57,10 +53,10 @@
                     <a class="nav-link" href="{!! route('articles') !!}">Статьи</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Пользователи</a>
+                    <a class="nav-link" href="{!! route('users') !!}">Пользователи</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Комментарии</a>
+                    <a class="nav-link" href="{!! route('comments') !!}">Комментарии</a>
                 </li>
             </ul>
 
